@@ -1,11 +1,12 @@
-import { Navigation } from './routes/Navigation';
+import { Navigation } from '@/routes';
 
 function App() {
+
   return (
     <>
       <Navigation />
     </>
-  );
+  )
 }
 
-export default App;
+export default App
