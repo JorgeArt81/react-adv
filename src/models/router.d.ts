@@ -1,4 +1,4 @@
-interface Route {
+export interface Route {
     to: string;
     path: string;
     Component: LazyExoticComponent<JSXComponent> | JSXComponent
