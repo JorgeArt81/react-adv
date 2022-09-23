@@ -9,18 +9,12 @@ interface UseProductArgs {
 export const useProduct = ({ onChange, product, value = 0 }: UseProductArgs) => {
     const [counter, setCounter] = useState(value);
 
-    const isControlled = useRef<boolean>(!!onChange);
-    // console.log('isControlled', isControlled.current);
-
     useEffect(() => {
         setCounter(value);
     }, [value])
 
 
     const increaseBy = (value: number) => {
-        if (isControlled.current) {
-            return onChange!({ count: value, product });
-        }
         const newValue = Math.max(counter + value, 0);
         setCounter(newValue);
 
