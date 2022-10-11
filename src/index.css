@@ -84,10 +84,11 @@ button:focus-visible {
 }
 
 .main-layout {
-  position: relative;
   display: grid;
-  grid-template-columns: 300px auto;
+  gap: 2rem;
   grid-template-areas: "nav pages";
+  grid-template-columns: 300px auto;
+  position: relative;
 }
 
 .nav {
